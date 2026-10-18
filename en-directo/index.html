@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#050505" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/en-directo/styles.css" />
+    <title>En directo · Glow</title>
+    <script type="module" src="/en-directo/app.js"></script>
+  </head>
+  <body>
+    <header class="top">
+      <a class="wordmark chrome-text" href="/">Glow</a>
+      <span class="badge">Panel privado</span>
+    </header>
+
+    <main class="panel">
+      <section id="view-loading" class="card card--center" aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span>
+        <p class="muted">Cargando…</p>
+      </section>
+
+      <section id="view-login" class="card" hidden>
+        <h1 class="chrome-text">Acceso</h1>
+        <p class="muted">Inicia sesión para ver cuánta gente hay en tu web ahora mismo.</p>
+        <form id="login-form" class="form">
+          <label>Correo<input id="login-email" type="email" autocomplete="email" required /></label>
+          <label>Contraseña<input id="login-password" type="password" autocomplete="current-password" required /></label>
+          <button class="button" type="submit">Entrar</button>
+          <button class="link" id="forgot-password" type="button">¿Has olvidado la contraseña?</button>
+          <p id="login-message" class="message" role="alert"></p>
+        </form>
+      </section>
+
+      <section id="view-set-password" class="card" hidden>
+        <h1 id="password-title" class="chrome-text">Crea tu contraseña</h1>
+        <form id="password-form" class="form">
+          <label>Contraseña<input id="new-password" type="password" autocomplete="new-password" minlength="8" required /></label>
+          <button class="button" type="submit">Guardar y entrar</button>
+          <p id="password-message" class="message" role="alert"></p>
+        </form>
+      </section>
+
+      <section id="view-forbidden" class="card" hidden>
+        <h1 class="chrome-text">Sin acceso</h1>
+        <p class="muted">La cuenta <strong id="forbidden-email"></strong> no tiene permiso para ver este panel.</p>
+        <button class="button button--ghost" type="button" data-logout>Cerrar sesión</button>
+      </section>
+
+      <section id="view-dashboard" class="card card--center live" hidden>
+        <div id="live-status" class="live__status"><span class="live__dot" aria-hidden="true"></span>En directo</div>
+        <div id="live-count" class="live__count chrome-text" aria-live="polite">–</div>
+        <p id="live-label" class="live__label">personas en la web ahora mismo</p>
+        <p id="live-updated" class="muted small"></p>
+        <footer class="live__footer">
+          <span class="muted small" id="user-email"></span>
+          <button class="link" type="button" data-logout>Cerrar sesión</button>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

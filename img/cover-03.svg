@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560">
+  <defs><linearGradient id="a" x2=".8" y2="1"><stop stop-color="#090b12"/><stop offset=".48" stop-color="#122b49"/><stop offset="1" stop-color="#050608"/></linearGradient><radialGradient id="b"><stop stop-color="#00b4ff" stop-opacity=".55"/><stop offset="1" stop-color="#00b4ff" stop-opacity="0"/></radialGradient></defs>
+  <rect width="700" height="560" fill="url(#a)"/><circle cx="350" cy="230" r="260" fill="url(#b)"/>
+  <path d="M350 68v424M140 172l420 216M140 388l420-216" stroke="#d7e8ff" stroke-opacity=".4" stroke-width="2"/>
+  <circle cx="350" cy="280" r="175" fill="none" stroke="#e8e8e8" stroke-opacity=".62"/>
+  <circle cx="350" cy="280" r="121" fill="none" stroke="#00b4ff" stroke-opacity=".78" stroke-width="2"/>
+  <circle cx="350" cy="280" r="22" fill="#f7fbff" fill-opacity=".85"/>
+  <text x="350" y="504" fill="#fff" font-family="Arial,sans-serif" font-size="19" letter-spacing="5" text-anchor="middle">CERCA DEL SOL</text>
+</svg>
